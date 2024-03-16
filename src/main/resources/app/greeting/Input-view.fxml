@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="494.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.greeting.controllers.InputController">
+   <children>
+      <TextField fx:id="tfName" layoutX="162.0" layoutY="80.0" prefHeight="35.0" prefWidth="273.0" promptText="Name">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <ColorPicker fx:id="clrpicFavorite" layoutX="162.0" layoutY="165.0" prefHeight="45.0" prefWidth="273.0">
+         <value>
+            <Color />
+         </value></ColorPicker>
+      <Button fx:id="btnEnter" layoutX="162.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#onClickEnter" prefHeight="45.0" prefWidth="236.0" text="Enter">
+         <font>
+            <Font size="31.0" />
+         </font></Button>
+      <Text layoutX="160.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your name">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="162.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick your favorite color">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="162.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick greeting strategy">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="rbtnDefault" layoutX="162.0" layoutY="262.0" mnemonicParsing="false" selected="true" text="Default">
+         <toggleGroup>
+            <ToggleGroup fx:id="strategy" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="270.0" layoutY="262.0" mnemonicParsing="false" text="Time based" toggleGroup="$strategy" />
+   </children>
+</AnchorPane>
